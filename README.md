@@ -37,13 +37,13 @@ Github Repository for Paper "Towards Applying Machine Learning Technique For Fau
  
 * Start Prediction and Get Vectors.
 
- To start predict the code snippet files. Modify [`interactive_predict.py`](https://github.com/jxm6165/Towards-Applying-ML-Techinque-For-Fault-Localization/blob/master/interactive_predict.py) to change the directory into that storing code snippet files.
+  To start predicting the code snippet files. Modify [`interactive_predict.py`](https://github.com/jxm6165/Towards-Applying-ML-Techinque-For-Fault-Localization/blob/master/interactive_predict.py) to change the directory into that storing code snippet files.
  
- Then, run 
+  Then, run 
  ```bash
  python3 code2vec.py --load models/java14_model/saved_model_iter8.release --export_code_vectors --predict > vectors.log
  ```
- We will get code vectors corresponding to each code snippet in that directory saved in `vectors.log`.
+  We will get code vectors corresponding to each code snippet in that directory saved in `vectors.log`.
  
 * Split to Seperate Files.
 
