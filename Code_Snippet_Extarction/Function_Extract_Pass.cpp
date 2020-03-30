@@ -11,7 +11,8 @@ namespace {
     SkeletonPass() : FunctionPass(ID) {}
 
     virtual bool runOnFunction(Function &F) {
-      errs() << F << "\n\n";
+      errs() << "Function body:\n";
+      F.dump();
       return false;
     }
   };
